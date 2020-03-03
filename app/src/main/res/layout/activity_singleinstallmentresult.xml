@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:text="할부 납부 결과표"
+        android:fontFamily="@font/mapo"
+        android:background="#DDF7C3"
+        android:textColor="#131212"
+        android:textSize="23dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:weightSum="100">
+
+
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:text="납부월수"
+        android:fontFamily="@font/mapo"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#131212"
+        android:background="@color/color1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="20"
+            android:background="@color/color2"
+            android:fontFamily="@font/mapo"
+            android:gravity="center"
+            android:text="할부잔액"
+            android:textColor="#131212"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:text="할부원금"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#131212"
+            android:fontFamily="@font/mapo"
+            android:background="@color/color1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:text="할부\n수수료"
+            android:textSize="20dp"
+            android:fontFamily="@font/mapo"
+            android:gravity="center"
+            android:textColor="#131212"
+            android:background="@color/color2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:text="월납부액"
+            android:textSize="20dp"
+            android:fontFamily="@font/mapo"
+            android:gravity="center"
+            android:textColor="#131212"
+            android:background="@color/color1"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0, 1, 2, 3, 4">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/numbermonth"
+                        android:textSize="20dp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/leftmoney"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:textSize="20dp"
+                        android:id="@+id/principlemoney"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:textSize="20dp"
+                        android:id="@+id/fee"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:textSize="20dp"
+                        android:id="@+id/monthlypay"
+                        android:gravity="center"/>
+
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>
