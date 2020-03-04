@@ -20,6 +20,9 @@
         <activity android:name=".SingleinstallmentActivity"></activity>
         <activity android:name=".InstallmenuActivity"></activity>
         <activity android:name=".ResultTableActivity"></activity>
+        <activity android:name=".CompareinstallmentActivity"></activity>
+        <activity android:name=".CompareResultTableActivity"></activity>
+        <activity android:name="Option"></activity>
     </application>
 
 </manifest>
