@@ -1,7 +1,9 @@
 package com.example.installmentcalculator;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Button cal = (Button) findViewById(R.id.calculator_button);
         final Button install = (Button) findViewById(R.id.installment_button);
 
-//        how.setOnClickListener(this);
+       //   how.setOnClickListener(this);
 //        cal.setOnClickListener(this);
 //        install.setOnClickListener(this);
 
@@ -46,7 +48,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        how.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                show();
+            }
+        });
+    }
+
+    void show(){
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        builder.setTitle("할부계산기 이용법").setMessage("반갑습니다. 단국대학교 모바일시스템공학과 조수아입니다.\n원하시는 계산기를 사용해주세요.\n2개이상의 할부 제품을 비교하고 싶으시다면\n할부계산기를 선택하시고 2개버튼을 클릭하세요");
+
+        AlertDialog alertDialog = builder.create();
+
+        alertDialog.show();
+
     }
 
 }
+
 

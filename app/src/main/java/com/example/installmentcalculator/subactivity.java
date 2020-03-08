@@ -25,11 +25,16 @@ public class subactivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_subactivity);
     }
+
+
     public void buttonClick(View view) {
         Button getButton = findViewById(view.getId());
+        Toast.makeText(this, "눌러졌어요", Toast.LENGTH_SHORT).show();
 
 
         switch (view.getId()) {
+
+
             case R.id.all_clear_button:
                 isFirstInput = true;
                 resultNumber = 0;
