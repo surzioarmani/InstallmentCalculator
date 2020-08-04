@@ -76,6 +76,6 @@
             android:textSize="18dp"
             android:fontFamily="@font/mapo"
             android:backgroundTint="#D3A9A9"
-            android:id="@+id/division_button" />
+            android:id="@+id/cardInfo" />
     </LinearLayout>
 </LinearLayout>

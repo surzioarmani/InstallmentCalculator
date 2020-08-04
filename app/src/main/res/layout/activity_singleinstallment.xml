@@ -106,43 +106,43 @@
 
 
 
-    </LinearLayout>
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="5"/>
+<!--    </LinearLayout>-->
+<!--    <View-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="5"/>-->
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="10"
-        android:orientation="horizontal"
-        android:weightSum="100">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="10"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:weightSum="100">-->
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="30"
-            android:text="무이자 개월"
-            android:textSize="20dp"
-            android:fontFamily="@font/mapo"
-            android:gravity="center"
-            android:textColor="#020202"
-            android:background="#CECACA"/>
+<!--        <TextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="30"-->
+<!--            android:text="무이자 개월"-->
+<!--            android:textSize="20dp"-->
+<!--            android:fontFamily="@font/mapo"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="#020202"-->
+<!--            android:background="#CECACA"/>-->
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="10"/>
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="10"/>-->
 
-        <EditText
-            android:id="@+id/free_month"
-            android:layout_width="0dp"
-            android:layout_height="48dp"
-            android:layout_weight="60"
-            android:gravity="center"
-             />
+<!--        <EditText-->
+<!--            android:id="@+id/free_month"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_weight="60"-->
+<!--            android:gravity="center"-->
+<!--             />-->
 
 
 
@@ -198,6 +198,14 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_weight="10"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100"/>
 
     <LinearLayout
         android:layout_width="match_parent"
